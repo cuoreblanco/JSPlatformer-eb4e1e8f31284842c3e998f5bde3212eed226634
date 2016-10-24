@@ -217,8 +217,9 @@ Player.prototype.moveY = function(step, level, keys) {
   } else {
      this.pos = newPos;
   }
+  //LAB 6: add code when player hits lava and you reset the level
   if (obstacle = "lava"){
-    this.pos = Vector(10,10);
+    this.pos =  pos.plus(new Vector(6,13));
   }
 };
 
